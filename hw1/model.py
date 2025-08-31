@@ -79,6 +79,7 @@ def create_tensor_dataset(raw_data: Dict[str, List[Union[int, str]]],
                           embeddings: gensim.models.keyedvectors.KeyedVectors) -> TensorDataset:
     all_features, all_labels = [], []
     for text, label in tqdm(zip(raw_data['text'], raw_data['label'])):
+        pass
 
         # TODO: complete the for loop to featurize each sentence
         # only add the feature and label to the list if the feature is not None
